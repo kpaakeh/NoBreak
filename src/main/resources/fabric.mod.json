@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "nobreak",
+  "version": "${version}",
+  "name": "NoBreak",
+  "description": "Prevent tools from breaking",
+  "authors": ["KPAAKEH"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/nobreak/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.kpaakeh.nobreak.client.NobreakClient"
+    ],
+    "modmenu": [
+      "org.kpaakeh.nobreak.client.config.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "cloth-config": "*",
+    "modmenu": "*"
+  }
+}
